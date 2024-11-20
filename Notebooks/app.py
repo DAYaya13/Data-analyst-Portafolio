@@ -13,9 +13,7 @@ if st.checkbox('Generar Histograma'):
     fig = px.histogram(car_data, x = 'odometer')
     st.plotly_chart(fig, use_container_width=True)
 
-  if st.checkbox('Generar Gráfico de Dispersión'):
+if st.checkbox('Generar Gráfico de Dispersión'):
     st.write('Creación de un Gráfico de Dispersión para el conjunto CSV')
-    
     fig = px.scatter(car_data, x = 'odometer', y = 'price')
-    
     st.plotly_chart(fig)  
