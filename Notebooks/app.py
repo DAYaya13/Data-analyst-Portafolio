@@ -6,7 +6,7 @@ car_data = pd.read_csv('/workspaces/Data-analyst-Portafolio/Notebooks/vehicles_u
 st.header('Proyecto 7 - Herramientas de Desarrollo de Software')
 
 st.write('Vista Previa del Conjunto de Datos')
-st.head(car_data.head())
+st.header(car_data.head())
 
 if st.checkbox('Generar Histograma'):
     st.write('Creación de un histograma para el conjunto CSV')
