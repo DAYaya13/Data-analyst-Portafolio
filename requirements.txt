@@ -1,3 +1,3 @@
-numpy
 pandas
-requests
+plotly_express
+streamlit
