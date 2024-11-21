@@ -5,9 +5,6 @@ import streamlit as st
 car_data = pd.read_csv('vehicles_us.csv')
 st.header('Proyecto 7 - Herramientas de Desarrollo de Software')
 
-st.write('Vista Previa del Conjunto de Datos')
-st.header(car_data.head())
-
 if st.checkbox('Generar Histograma'):
     st.write('Creación de un histograma para el conjunto CSV')
     fig = px.histogram(car_data, x = 'odometer')
